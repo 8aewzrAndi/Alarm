@@ -23,3 +23,10 @@ function setAlarm(el){
 	el.setAttribute('onclick', 'cancelAlarm(this);');
 	el.setAttribute('class', 'btn btn-danger');
 }
+
+function cancelAlarm(el){
+	el.innerHTML = "<span class='glyphicon glyphicon-time'></span> Set Alarm";
+	el.setAttribute('onclick', 'setAlarm(this);');
+	el.setAttribute('class', 'btn btn-success');
+	clearTimeout(timer);
+}
