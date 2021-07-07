@@ -30,3 +30,10 @@ function cancelAlarm(el){
 	el.setAttribute('class', 'btn btn-success');
 	clearTimeout(timer);
 }
+
+function initAlarm(){
+	sound.loop = true;
+	sound.play();
+	document.getElementById('alarmButton').style.display = 'none';
+	document.getElementById('selectButton').style.display = '';
+}
