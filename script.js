@@ -37,3 +37,11 @@ function initAlarm(){
 	document.getElementById('alarmButton').style.display = 'none';
 	document.getElementById('selectButton').style.display = '';
 }
+
+function stopAlarm(){
+	sound.pause();
+	sound.currentTime = 0;
+	document.getElementById('selectButton').style.display = 'none';
+	cancelAlarm(document.getElementById('alarmButton'));
+	document.getElementById('alarmButton').style.display = '';
+}
