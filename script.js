@@ -45,3 +45,11 @@ function stopAlarm(){
 	cancelAlarm(document.getElementById('alarmButton'));
 	document.getElementById('alarmButton').style.display = '';
 }
+
+
+function snoozeAlarm(){
+	stopAlarm();
+	setTimeout(initAlarm, 300000);
+	button.innerText = "Cancel Alarm";
+	button.setAttribute('onclick', 'cancelAlarm(this);');
+}
