@@ -20,7 +20,12 @@
 			<button type="button" onclick="setAlarm(this);" id="alarmButton" class="btn btn-success"><span class="glyphicon glyphicon-time"></span> Set Alarm</button>
 		</center>
         <br>
-        <div id="selectButton" style="display:none;"></div>
+        <div id="selectButton" style="display:none;">
+            <center>
+				<button onclick="snoozeAlarm();" class="btn btn-warning"><span class="glyphicon glyphicon-pause"></span> Snooze 5 minutes</button>
+				<button onclick="stopAlarm();" class="btn btn-danger"><span class="glyphicon glyphicon-stop"></span> Stop Alarm</button>
+			</center>
+        </div>
     </div>
 
 
